@@ -79,7 +79,7 @@ export default function EventPage() {
                   <h3 className="text-primary-dark mt-3">{currentEvent.title}</h3>
                   <div className="mt-2">
                     <i className="block">
-                      Jour de l'evenement: <b>20, Octobre 2024</b>
+                      Jour de l&apos;evenement: <b>20, Octobre 2024</b>
                     </i>
                     <i className="mt-1 block">
                       Location: <b>{currentEvent.location}</b>

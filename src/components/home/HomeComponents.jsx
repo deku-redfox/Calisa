@@ -48,10 +48,10 @@ export function IntroBox() {
                     viewport={{ once: true }}>
 
                     <h1 className="text-white">
-                        Le centre d'accompagnement et d'assistance des personnes aveugles du Cameroun
+                        Le centre d&apos;accompagnement et d&apos;assistance des personnes aveugles du Cameroun
                     </h1>
                     <h4 className="mt-7 mb-8 text-gray-300 tracking-widest">
-                        Decouvrez un espace dedié à l'autonomie et l'épanouissement des personnes aveugles au Cameroun. Rejoignez-nous dans
+                        Decouvrez un espace dedié à l&apos;autonomie et l&apos;épanouissement des personnes aveugles au Cameroun. Rejoignez-nous dans
                         notre mission de transformation de vies
                     </h4>
                     <div>
@@ -99,13 +99,13 @@ export function ActivityBox({
 }) {
     return (
         <motion.div className="relative h-[300px] sm:h-[240px] md:h-[300px] lg:h-[270px] xl:h-[310px]
-        cursor-pointer mb-14 group w-full"
+            cursor-pointer mb-14 group w-full"
             initial={{ opacity: 0, y: 120 }}
             transition={{ duration: 0.7 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}>
 
-            <Image src={thumbnail} fill />
+            <Image src={thumbnail} fill alt={`${title} Activity Thumbnail`} />
 
             <div className="absolute left-10 right-4 -bottom-8 bg-white shadow-lg h-[75px]">
                 <div className="-ml-5 flex items-center h-full space-x-3">

@@ -7,6 +7,7 @@ import AppLink from "@/model/app-models/link"
 import { faFolder } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Button, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, useDisclosure } from "@nextui-org/react"
+import Image from "next/image"
 import Link from "next/link"
 import { useSearchParams } from "next/navigation"
 import { useState } from "react"
@@ -46,8 +47,8 @@ export default function GalleryPage() {
 							<div className="columns-3xs gap-6">
 								{
 									galleryPics.map((picture) => (
-										<img key={picture.id} src={picture.data} alt={`Picture from ${currentFolder} Folder`}
-												className="w-full cursor-pointer mb-7 rounded-md hover:scale-105 duration-300 shadow-lg" 
+										<Image key={picture.id} width={1000} height={1000} src={picture.data} alt={`Picture from ${currentFolder} Folder`}
+												className="relative h-auto w-full  cursor-pointer mb-7 rounded-md hover:scale-105 duration-300 shadow-lg" 
 												onClick={() => handleOnPic(picture)} />
 									))
 								}
@@ -64,7 +65,8 @@ export default function GalleryPage() {
 													<span className="ml-2 text-primary">{currentFolder.folderName}</span>
 												</ModalHeader>
 												<ModalBody>
-													<img src={currentPic.data} alt={`Picture from ${currentFolder.folderName} Folder`} />
+													<Image width={1500} height={1500} src={currentPic.data} alt={`Picture from ${currentFolder.folderName} Folder`}
+														className="relative h-auto" />
 													<p className="italic">
 														Photo prise le: <b>{currentPic.createdAt}</b>
 													</p>

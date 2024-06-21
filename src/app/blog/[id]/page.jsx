@@ -55,11 +55,11 @@ export default function Blog({params}) {
 								<p className="tracking-wide">
 									{descriptions[2]}
 								</p>
-								<h3>C'est quoi le Calisa ?</h3>
+								<h3>C&apos;est quoi le Calisa ?</h3>
 								<p className="tracking-wide">
 									{descriptions[1]}
 								</p>
-								<h3>Quelle est l'histoire de sa creation ?</h3>
+								<h3>Quelle est l&apos;histoire de sa creation ?</h3>
 								<p className="tracking-wide">
 									{descriptions[3]} {descriptions[3]}
 								</p>

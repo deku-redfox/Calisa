@@ -42,7 +42,7 @@ export default function Page() {
           <div className="flex-1 flex flex-col max-md:items-center max-md:text-center">
             <h2 className="text-primary-dark mb-6">A Propos de Nous</h2>
             <p className="leading-relaxed tracking-wider">
-              Au <b>CALISA</b> <i>(Centre d'alphabetisation et d'insertion sociale des aveugles)</i> nous travaillons
+              Au <b>CALISA</b> <i>(Centre d&apos;alphabetisation et d&apos;insertion sociale des aveugles)</i> nous travaillons
               pour améliorer la qualité de vie des personnes aveugles. Avec notre équipe de professionnels passionnés et dévoués, nous
               croyons en un monde où chaque personne aveugle peut vivre pleinement et independamment.
             </p>
@@ -57,7 +57,7 @@ export default function Page() {
               </Chip>
               <Chip startContent={<FontAwesomeIcon icon={faCheck} className="mr-2"/>} 
                 variant="flat" color="warning" className="px-3 py-4 text-[16px] mr-4 mb-2">
-                Favoriser l'insertion sociale des aveugles
+                Favoriser l&apos;insertion sociale des aveugles
               </Chip>
             </div>
             <div>
@@ -66,7 +66,7 @@ export default function Page() {
           </div>
 
           <figure className="relative flex-1 max-md:hidden min-h-[440px]">
-            <Image src='/president-cut.png' fill className='object-contain'/>
+            <Image src='/president-cut.png' fill alt="About Section Image" className='object-contain'/>
           </figure>
 
           </div>
@@ -123,9 +123,9 @@ export default function Page() {
       <section>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d980.6423840862814!2d9.803358158111497!3d4.096588524304866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10610f015645f883%3A0x1b6dc40452c1baff!2sR%C3%A9sidence%20Universitaire%20de%20PK17!5e0!3m2!1sfr!2scm!4v1718455337326!5m2!1sfr!2scm" 
           style={{border: '0'}} 
-          allowfullscreen="" 
+          allowFullScreen="" 
           loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
           className="w-full h-[300px] md:h-[450px]">
         </iframe>
       </section>

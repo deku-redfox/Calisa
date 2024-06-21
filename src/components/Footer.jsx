@@ -14,7 +14,7 @@ export default function Footer() {
                     <div className="flex flex-col items-start -translate-y-6 w-full md:w-[35%] lg:w-[40%]">
                         <AppLogo isWhite />
                         <p className="tracking-wide leading-relaxed mt-2 mb-3">
-                            Decouvrez un espace dedié à l'autonomie et l'épanouissement des personnes aveugles au Cameroun. Rejoignez-nous dans
+                            Decouvrez un espace dedié à l&apos;autonomie et l&apos;épanouissement des personnes aveugles au Cameroun. Rejoignez-nous dans
                             notre mission de transformation de vies
                         </p>
                         <p>
