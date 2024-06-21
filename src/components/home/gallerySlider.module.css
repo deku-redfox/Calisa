@@ -1,0 +1,36 @@
+.image {
+  @apply w-[500px] lg:w-[600px] -z-10 md:grayscale duration-500 hover:scale-110 hover:z-50 hover:shadow-lg hover:grayscale-0;
+  height: 100%;
+  padding: 0 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.images {
+  @apply z-0 hover:z-30;
+  display: flex;
+  animation: swipe 35s linear infinite;
+}
+
+/*Only use banner to select .images in styles*/
+.banner:hover .images {
+  animation-play-state: paused;
+}
+
+.leftHoverBarrier {
+  @apply absolute left-0 top-0 bottom-0 w-[250px] bg-transparent z-40 max-md:w-full;
+}
+
+.rightHoverBarrier {
+  @apply absolute right-0 top-0 bottom-0 w-[250px] bg-transparent z-40 max-md:w-0;
+}
+
+@keyframes swipe {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

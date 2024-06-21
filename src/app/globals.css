@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary: #0982e6;
+
+    --transition-color: color .2s ease-in-out;
+    --transition-bg: background-color .2s ease-in-out;
+    --transition-opacity: opacity .2s ease-in-out;
+    --transition-border: border .2s ease-in-out;
+    --transition: .2s ease-in-out;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+/* STYLES GLOBAL DU SITE ICI */
+
+input,
+button {
+    outline: none;
+}
+
+h1 {
+    @apply text-4xl lg:text-[2.45rem] font-bold tracking-wider;
+}
+
+h2 {
+    @apply text-3xl lg:text-[1.95rem] font-bold tracking-wider;
+}
+
+h3 {
+    @apply text-[20px] lg:text-2xl font-bold
+}
+
+h4 {
+    @apply text-[18px] font-bold tracking-wider;
+}
+
+a {
+    transition: var(--transition);
+}
+
+.cover {
+    @apply top-0 bottom-0 left-0 right-0;
+}
+
+.dividedPage {
+    @apply flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8;
+}
+
+.dividedPageSide {
+    @apply flex-[0.30];
+}
+
+.sidebarBox {
+    @apply border border-gray-300 rounded-sm py-6 px-4 bg-white;
+}
+
+.dividedPageMain {
+    @apply flex-1;
+}
+
+.titleUnderline {
+    @apply h-1 w-9 bg-secondary rounded-lg mt-1;
+}
+
+@media (prefers-color-scheme: dark) {}
+
+@layer utilities {}
